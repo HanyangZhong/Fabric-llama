@@ -25,13 +25,13 @@ const btn_color = '#444444'
 const authors = [
   {
     name: "Liman Wang",
-    icon: "./icon/junyaohu.jpg",
+    icon: "./icon/173160746.jpg",
     homepage: "https://limanwang.github.io/#/",
     address_flag: "1,"
   },
   {
     name: "Hanyang Zhong",
-    icon: "./icon/anya.jpg",
+    icon: "./icon/ava.jpg",
     homepage: "https://hanyangzhong.github.io/",
     address_flag: "1,"
   },
