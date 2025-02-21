@@ -7,13 +7,13 @@ import { Document, Files, MagicStick, Picture, DataAnalysis, Film } from '@eleme
 const logo = './logo.png'
 
 // 标题
-const title = 'Academic Project Page Template'
+const title = 'Fabric-Llama: Multimodal Learning for Robotic Fabric Sorting and Selection'
 
 // 标题颜色
 const title_color = '#000000'
 
 // 标题补充，没有则置为''即可
-const title_supp = ' (Vue based)'
+const title_supp = ''
 
 // 标题补充颜色
 const title_supp_color = '#42B883'
@@ -26,20 +26,32 @@ const authors = [
   {
     name: "Liman Wang",
     icon: "./icon/junyaohu.jpg",
-    homepage: "https://junyaohu.github.io/",
-    address_flag: "1,#"
+    homepage: "https://limanwang.github.io/#/",
+    address_flag: "1,"
   },
   {
     name: "Hanyang Zhong",
     icon: "./icon/anya.jpg",
-    homepage: "https://www.bilibili.com/video/BV1jv4y1P7Bb",
-    address_flag: "1,#"
+    homepage: "https://hanyangzhong.github.io/",
+    address_flag: "1,"
   },
   {
     name: "Tianyuan Wang",
     icon: "./icon/ikun.avif",
     homepage: "",
-    address_flag: "1,*"
+    address_flag: "1,"
+  },
+  {
+    name: "Shan Luo",
+    icon: "./icon/ikun.avif",
+    homepage: "",
+    address_flag: "2,"
+  },
+  {
+    name: "Jihong Zhu",
+    icon: "./icon/ikun.avif",
+    homepage: "",
+    address_flag: "1,"
   },
 ]
 
@@ -61,7 +73,7 @@ const addresses = [
 
 // 共一和通讯提示
 const con_and_corresponding_author = 
-  "#: Equal Contribution. *: Corresponding Author."
+  "#: Equal Contribution. "
 
 // 最新消息
 const news = "🔥 [2024-12-15] This template project is still under development."
