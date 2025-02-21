@@ -24,21 +24,21 @@ const btn_color = '#444444'
 // 作者清单（包含作者姓名、头像、主页、地址序号）
 const authors = [
   {
-    name: "Your Name",
+    name: "Liman Wang",
     icon: "./icon/junyaohu.jpg",
     homepage: "https://junyaohu.github.io/",
     address_flag: "1,#"
   },
   {
-    name: "Anya Forger",
+    name: "Hanyang Zhong",
     icon: "./icon/anya.jpg",
     homepage: "https://www.bilibili.com/video/BV1jv4y1P7Bb",
-    address_flag: "2,#"
+    address_flag: "1,#"
   },
   {
-    name: "BugCat Capoo",
-    icon: "./icon/capoo.webp",
-    homepage: "https://zh.moegirl.org.cn/%E7%8C%AB%E7%8C%AB%E8%99%AB%E5%92%96%E6%B3%A2",
+    name: "Tianyuan Wang",
+    icon: "./icon/ikun.avif",
+    homepage: "",
     address_flag: "1,*"
   },
 ]
@@ -47,15 +47,15 @@ const authors = [
 const addresses = [
   {
     address_flag: "1",
-    name: "Home University",
-    icon: "./icon/home.png",
-    homepage: "https://github.com/hmuniversity"
+    name: "University of York",
+    icon: "./icon/University_of_York_coat_of_arms.svg.png",
+    homepage: "https://www.york.ac.uk/"
   },
   {
     address_flag: "2",
-    name: "IKUN University",
-    icon: "./icon/ikun.avif",
-    homepage: "https://www.bilibili.com/video/BV178411Y7QB"
+    name: "King’s College London",
+    icon: "./icon/KCL.webp",
+    homepage: "https://www.kcl.ac.uk/"
   },
 ]
 
