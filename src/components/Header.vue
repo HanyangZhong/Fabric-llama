@@ -21,7 +21,7 @@ const more_paper = {
         name: "FENet - ICME 2024",
         link: "https://github.com/HanyangZhong/FENet",
     },
-    "LLM-SAP": {
+    "LLMSAP": {
         name: "LLM-SAP - ICME 2024",
         link: "https://github.com/HanyangZhong/Situational_Planning_datasets",
     },
@@ -63,7 +63,7 @@ const more_paper = {
                 <a :href=more_paper.FENet.link>{{ more_paper.FENet.name }}</a>
             </el-menu-item>
             <el-menu-item index="2-2">
-                <a :href=more_paper.LLM-SAP.link>{{ more_paper.LLM-SAP.name }}</a>
+                <a :href=more_paper.LLMSAP.link>{{ more_paper.LLMSAP.name }}</a>
             </el-menu-item>
             <el-menu-item index="2-3">
                 <a :href=more_paper.BRU.link>{{ more_paper.BRU.name }}</a>
