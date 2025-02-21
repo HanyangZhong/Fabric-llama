@@ -4,26 +4,26 @@ import { ElIcon } from 'element-plus'
 import { HomeFilled, SuccessFilled } from '@element-plus/icons-vue'
 
 // 个人主页
-
-// 项目主页
 const logo = {
     name: "Fabric-llama",
     link: "#",
 }
 
+// 项目主页
+const logo = {
+    name: "Details page",
+    link: "#",
+}
+
 // 右侧更多菜单
 const more_paper = {
-    "ExtDM": {
-        name: "ExtDM - CVPR 2024",
-        link: "https://zzcheng.top/ExtDM/",
+    "FENet": {
+        name: "FENet - ICME 2024",
+        link: "https://github.com/HanyangZhong/FENet",
     },
-    "MPOT": {
-        name: "MPOT - ICCV 2023",
-        link: "https://zzcheng.top/MPOT/",
-    },
-    "ControlNet": {
-        name: "ControlNet - ICCV 2023",
-        link: "https://github.com/lllyasviel/ControlNet",
+    "LLM-SAP": {
+        name: "LLM-SAP - ICME 2024",
+        link: "https://github.com/HanyangZhong/Situational_Planning_datasets",
     }
 }
 
