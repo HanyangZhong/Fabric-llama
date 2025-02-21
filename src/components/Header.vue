@@ -4,14 +4,10 @@ import { ElIcon } from 'element-plus'
 import { HomeFilled, SuccessFilled } from '@element-plus/icons-vue'
 
 // 个人主页
-const home = {
-    name: "My Blog",
-    link: "https://junyaohu.github.io/",
-}
 
 // 项目主页
 const logo = {
-    name: "Template",
+    name: "Fabric-llama",
     link: "#",
 }
 
