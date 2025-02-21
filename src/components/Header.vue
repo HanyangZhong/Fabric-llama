@@ -4,9 +4,9 @@ import { ElIcon } from 'element-plus'
 import { HomeFilled, SuccessFilled } from '@element-plus/icons-vue'
 
 // 个人主页
-const logo = {
+const home = {
     name: "Fabric-llama",
-    link: "#",
+    link: "",
 }
 
 // 项目主页
