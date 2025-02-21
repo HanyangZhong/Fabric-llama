@@ -60,13 +60,13 @@ const more_paper = {
         <el-sub-menu index="2">
             <template #title>More</template>
             <el-menu-item index="2-1">
-                <a :href=more_paper.ExtDM.link>{{ more_paper.FENet.name }}</a>
+                <a :href=more_paper.FENet.link>{{ more_paper.FENet.name }}</a>
             </el-menu-item>
             <el-menu-item index="2-2">
-                <a :href=more_paper.MPOT.link>{{ more_paper.LLM-SAP.name }}</a>
+                <a :href=more_paper.LLM-SAP.link>{{ more_paper.LLM-SAP.name }}</a>
             </el-menu-item>
             <el-menu-item index="2-3">
-                <a :href=more_paper.ControlNet.link>{{ more_paper.BRU.name }}</a>
+                <a :href=more_paper.BRU.link>{{ more_paper.BRU.name }}</a>
             </el-menu-item>
         </el-sub-menu>
 
