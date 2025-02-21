@@ -4,7 +4,7 @@ import { ElIcon } from 'element-plus'
 import { Document, Files, MagicStick, Picture, DataAnalysis, Film } from '@element-plus/icons-vue'
 
 // logo地址，没有则置为""即可
-const logo = './logo.png'
+const logo = ''
 
 // 标题
 const title = 'Fabric-Llama: Multimodal Learning for Robotic Fabric Sorting and Selection'
@@ -25,33 +25,28 @@ const btn_color = '#444444'
 const authors = [
   {
     name: "Liman Wang",
-    icon: "./icon/173160746.jpg",
     homepage: "https://limanwang.github.io/#/",
     address_flag: "1,"
   },
   {
     name: "Hanyang Zhong",
-    icon: "./icon/ava.jpg",
     homepage: "https://hanyangzhong.github.io/",
     address_flag: "1,"
   },
   {
     name: "Tianyuan Wang",
-    icon: "./icon/ikun.avif",
     homepage: "",
     address_flag: "1,"
   },
   {
     name: "Shan Luo",
-    icon: "./icon/ikun.avif",
     homepage: "",
     address_flag: "2,"
   },
   {
     name: "Jihong Zhu",
-    icon: "./icon/ikun.avif",
     homepage: "",
-    address_flag: "1,"
+    address_flag: "1,#"
   },
 ]
 
@@ -73,7 +68,7 @@ const addresses = [
 
 // 共一和通讯提示
 const con_and_corresponding_author = 
-  "#: Equal Contribution. "
+  "#: corresponding author. "
 
 // 最新消息
 const news = "🔥 [2024-12-15] This template project is still under development."
