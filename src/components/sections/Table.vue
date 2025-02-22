@@ -186,10 +186,10 @@ const table2Data = [
                 <el-card class="card">
 
                     <!-- 默认tab -->
-                    <el-tabs class="demo-tabs" model-value="Method B">
+                    <el-tabs class="demo-tabs" model-value="Finetuning Experiment Results">
 
                     <!-- 第一个tab -->
-                    <el-tab-pane label="Method A" name="Modality Experiment Results">
+                    <el-tab-pane label="Modality Experiment Results" name="Modality Experiment Results">
 
                         <!-- 表格数据 -->
                         <el-table 
@@ -209,7 +209,7 @@ const table2Data = [
                         </el-table>
                     </el-tab-pane>
 
-                    <el-tab-pane label="Method B" name="Finetuning Experiment Results">
+                    <el-tab-pane label="Finetuning Experiment Results" name="Finetuning Experiment Results">
                         <!-- 表格数据 -->
                         <el-table 
                             :data="table2Data"
