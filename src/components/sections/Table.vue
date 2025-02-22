@@ -256,7 +256,7 @@ const table3Data = [
                         <el-table
                             :data="table3Data"
                             :default-sort="{ prop: 'finer_acc', order: 'descending' }"
-                            border
+                            scrollbar-always-on
                             style="width: 100%"
                         >
                             <!-- Model -->
