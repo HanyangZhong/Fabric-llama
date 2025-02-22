@@ -260,17 +260,19 @@ const table3Data = [
                             style="width: 100%"
                         >
                             <!-- Model -->
-                            <el-table-column prop="model" label="Model" width="120" sortable />
+                            <el-table-column prop="model" label="Model" width="220" sortable />
                             <!-- Original Test -->
                             
                             <el-table-column label="Original Test">
-                            <el-table-column prop="original_acc" label="Overall ACC ↑" width="120" sortable />
-                            <el-table-column prop="original_sk" label="Sk ↓" width="80" sortable />
+                            <el-table-column prop="original_acc" label="Overall ACC ↑" width="150" sortable />
+                            <el-table-column prop="original_sk" label="Sk ↓" width="120" sortable />
                             </el-table-column>
 
                             <!-- Finer-grained Test -->
-                            <el-table-column prop="finer_acc" label="Overall ACC ↑" width="120" sortable />
-                            <el-table-column prop="finer_sk" label="Sk ↓" width="80" sortable />
+                            <el-table-column label="Finer-grained Test">
+                            <el-table-column prop="finer_acc" label="Overall ACC ↑" width="150" sortable />
+                            <el-table-column prop="finer_sk" label="Sk ↓" width="120" sortable />
+                            </el-table-column>
                         </el-table>
                     </el-tab-pane>
 
