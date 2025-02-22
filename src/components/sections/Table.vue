@@ -238,7 +238,7 @@ const table4Data = [
     gpt_acc: "28.5%",
     gpt_selection: false,
     llama_acc: "62.5%",
-    llama_selection: false,
+    llama_selection: true,
   },
   {
     domain: "Workwear & Industrial Fabrics",
