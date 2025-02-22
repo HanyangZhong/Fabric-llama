@@ -261,18 +261,14 @@ const table3Data = [
                         >
                             <!-- Model -->
                             <el-table-column prop="model" label="Model" width="220" sortable />
-
                             <!-- Original Test -->
                             <el-table-column label="Original Test">
                             <el-table-column prop="original_acc" label="Overall ACC ↑" width="120" sortable />
                             <el-table-column prop="original_sk" label="Sk ↓" width="80" sortable />
-                            </el-table-column>
-
                             <!-- Finer-grained Test -->
                             <el-table-column label="Finer-grained Test">
                             <el-table-column prop="finer_acc" label="Overall ACC ↑" width="120" sortable />
                             <el-table-column prop="finer_sk" label="Sk ↓" width="80" sortable />
-                            </el-table-column>
                     </el-tab-pane>
 
                     <el-tab-pane label="Method D" name="Method D">
