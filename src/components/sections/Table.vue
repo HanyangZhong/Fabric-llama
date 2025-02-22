@@ -339,7 +339,7 @@ const getSelectionIcon = (selected) => (selected ? "✅" : "❌");
                             scrollbar-always-on
                             style="width: 100%"
                         >
-                            <el-table-column prop="model" label="Model" width="180" sortable />
+                            <el-table-column prop="model" label="Model" width="180"/>
                             <el-table-column prop="modality" label="Modality Data" min-width="200" />
                             <el-table-column prop="elasticity" label="Elasticity ACC" min-width="120" sortable />
                             <el-table-column prop="softness" label="Softness ACC" min-width="120" sortable />
@@ -358,7 +358,7 @@ const getSelectionIcon = (selected) => (selected ? "✅" : "❌");
                             scrollbar-always-on
                             style="width: 100%"
                         >
-                            <el-table-column prop="model" label="Model" width="180" sortable />
+                            <el-table-column prop="model" label="Model" width="180" />
                             <el-table-column prop="elasticity" label="Elasticity ACC" min-width="120" sortable />
                             <el-table-column prop="softness" label="Softness ACC" min-width="120" sortable />
                             <el-table-column prop="thickness" label="Thickness ACC" min-width="120" sortable />
@@ -376,7 +376,7 @@ const getSelectionIcon = (selected) => (selected ? "✅" : "❌");
                             style="width: 100%; table-layout: fixed;"
                         >
                             <!-- Model -->
-                            <el-table-column prop="model" label="Model" width="330" sortable />
+                            <el-table-column prop="model" label="Model" width="330" />
                             <!-- Original Test -->
                             
                             <el-table-column label="Original Test">
@@ -410,7 +410,7 @@ const getSelectionIcon = (selected) => (selected ? "✅" : "❌");
 
                             <!-- Fabric-Llama-90B -->
                             <el-table-column label="Fabric-Llama-90B">
-                                <el-table-column prop="fabric_acc" label="Sorting Acc ↑" width="100" />
+                                <el-table-column prop="fabric_acc" label="Sorting Acc ↑" width="100" sortable />
                                 <el-table-column label="Selection" width="100">
                                 <template #default="scope">
                                     {{ getSelectionIcon(scope.row.fabric_selection) }}
@@ -420,7 +420,7 @@ const getSelectionIcon = (selected) => (selected ? "✅" : "❌");
 
                             <!-- GPT-4o -->
                             <el-table-column label="GPT-4o">
-                                <el-table-column prop="gpt_acc" label="Sorting Acc ↑" width="100" />
+                                <el-table-column prop="gpt_acc" label="Sorting Acc ↑" width="100" sortable />
                                 <el-table-column label="Selection" width="100">
                                 <template #default="scope">
                                     {{ getSelectionIcon(scope.row.gpt_selection) }}
@@ -430,7 +430,7 @@ const getSelectionIcon = (selected) => (selected ? "✅" : "❌");
 
                             <!-- Llama-Vision-90B -->
                             <el-table-column label="Llama-Vision-90B">
-                                <el-table-column prop="llama_acc" label="Sorting Acc ↑" width="100" />
+                                <el-table-column prop="llama_acc" label="Sorting Acc ↑" width="100" sortable />
                                 <el-table-column label="Selection" width="100">
                                 <template #default="scope">
                                     {{ getSelectionIcon(scope.row.llama_selection) }}
