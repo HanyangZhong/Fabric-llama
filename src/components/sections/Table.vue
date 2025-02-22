@@ -260,7 +260,7 @@ const table3Data = [
                             style="width: 100%"
                         >
                             <!-- Model -->
-                            <el-table-column prop="model" label="Model" width="220" sortable />
+                            <el-table-column prop="model" label="Model" width="330" sortable />
                             <!-- Original Test -->
                             
                             <el-table-column label="Original Test">
