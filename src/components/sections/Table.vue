@@ -392,11 +392,11 @@ const getSelectionIcon = (selected) => (selected ? "✅" : "❌");
                         </el-table>
                     </el-tab-pane>
 
-                    <el-tab-pane label="Method D" name="Method D">
+                    <el-tab-pane label="Fabric Selection Experiment Results" name="Fabric Selection Experiment Results">
                         <el-table
                             :data="table4Data"
                             :default-sort="{ prop: 'fabric_acc', order: 'descending' }"
-                            border
+                            scrollbar-always-on
                             style="width: 100%; table-layout: fixed;"
                         >
                             <!-- 第一列：Domain -->
