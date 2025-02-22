@@ -168,6 +168,31 @@ const table2Data = [
     sk: 0,
   },
 ]
+
+// 表格数据
+const table3Data = [
+  {
+    model: "Llama3.2-Vision-90B",
+    original_acc: 49.8,
+    original_sk: 2.5,
+    finer_acc: 39.7,
+    finer_sk: 12.8,
+  },
+  {
+    model: "Llama3.2-Vision-90B + D-SFT",
+    original_acc: 93,
+    original_sk: 1,
+    finer_acc: 51.7,
+    finer_sk: 55.5,
+  },
+  {
+    model: "Fabric-Llama-90B",
+    original_acc: 94,
+    original_sk: 0,
+    finer_acc: 52.2,
+    finer_sk: 54.5,
+  },
+]
 </script>
 
 <template>
@@ -227,8 +252,27 @@ const table2Data = [
                         </el-table>
                     </el-tab-pane>
 
-                    <el-tab-pane label="Method C" name="Method C">
-                        Method C
+                    <el-tab-pane label="Finer-grained Experiment Results" name="Finer-grained Experiment Results">
+                        <el-table
+                            :data="table3Data"
+                            :default-sort="{ prop: 'finer_acc', order: 'descending' }"
+                            border
+                            style="width: 100%"
+                        >
+                            <!-- Model -->
+                            <el-table-column prop="model" label="Model" width="220" sortable />
+
+                            <!-- Original Test -->
+                            <el-table-column label="Original Test">
+                            <el-table-column prop="original_acc" label="Overall ACC ↑" width="120" sortable />
+                            <el-table-column prop="original_sk" label="Sk ↓" width="80" sortable />
+                            </el-table-column>
+
+                            <!-- Finer-grained Test -->
+                            <el-table-column label="Finer-grained Test">
+                            <el-table-column prop="finer_acc" label="Overall ACC ↑" width="120" sortable />
+                            <el-table-column prop="finer_sk" label="Sk ↓" width="80" sortable />
+                            </el-table-column>
                     </el-tab-pane>
 
                     <el-tab-pane label="Method D" name="Method D">
