@@ -193,6 +193,122 @@ const table3Data = [
     finer_sk: 54.5,
   },
 ]
+
+
+const table4Data = [
+  {
+    domain: "Apparel",
+    scenario: "Athletic wear for flexibility",
+    key_properties: "Elasticity (E) Softness (S)",
+    fabric_acc: "100%",
+    fabric_selection: true,
+    gpt_acc: "33.3%",
+    gpt_selection: false,
+    llama_acc: "50%",
+    llama_selection: true,
+  },
+  {
+    domain: "Apparel",
+    scenario: "Summer dresses for children",
+    key_properties: "Softness (S) Elasticity (E)",
+    fabric_acc: "83.3%",
+    fabric_selection: true,
+    gpt_acc: "20%",
+    gpt_selection: true,
+    llama_acc: "0%",
+    llama_selection: false,
+  },
+  {
+    domain: "Home Textiles",
+    scenario: "Light draping fabric for home decor",
+    key_properties: "Thickness (t) Softness (S)",
+    fabric_acc: "66.7%",
+    fabric_selection: true,
+    gpt_acc: "20%",
+    gpt_selection: false,
+    llama_acc: "50%",
+    llama_selection: false,
+  },
+  {
+    domain: "Home Textiles",
+    scenario: "Durable fabric for frequent-use furniture",
+    key_properties: "Texture (X) Thickness (t)",
+    fabric_acc: "62.5%",
+    fabric_selection: true,
+    gpt_acc: "28.5%",
+    gpt_selection: false,
+    llama_acc: "62.5%",
+    llama_selection: false,
+  },
+  {
+    domain: "Workwear & Industrial Fabrics",
+    scenario: "Protective fabric for work environments",
+    key_properties: "Thickness (t) Elasticity (e-)",
+    fabric_acc: "50%",
+    fabric_selection: true,
+    gpt_acc: "50%",
+    gpt_selection: false,
+    llama_acc: "50%",
+    llama_selection: false,
+  },
+  {
+    domain: "Workwear & Industrial Fabrics",
+    scenario: "Heavy-duty material for robust applications",
+    key_properties: "Texture (X) Thickness (T)",
+    fabric_acc: "75%",
+    fabric_selection: true,
+    gpt_acc: "33.3%",
+    gpt_selection: false,
+    llama_acc: "25%",
+    llama_selection: false,
+  },
+  {
+    domain: "Outdoor & Functional Fabrics",
+    scenario: "soft lining fabric for formal suits",
+    key_properties: "Thickness (t-) Softness (S) Texture (x-)",
+    fabric_acc: "80%",
+    fabric_selection: false,
+    gpt_acc: "42.8%",
+    gpt_selection: false,
+    llama_acc: "30%",
+    llama_selection: false,
+  },
+  {
+    domain: "Outdoor & Functional Fabrics",
+    scenario: "Lightweight smooth fabric for formal shirts",
+    key_properties: "Thickness (t-) Softness (S) Texture (x-)",
+    fabric_acc: "90%",
+    fabric_selection: true,
+    gpt_acc: "45%",
+    gpt_selection: false,
+    llama_acc: "9.1%",
+    llama_selection: false,
+  },
+  {
+    domain: "Luxury & Specialty Fabrics",
+    scenario: "Ultra-soft lightweight fabric for accessories",
+    key_properties: "Softness (S) Thickness (t-)",
+    fabric_acc: "50%",
+    fabric_selection: true,
+    gpt_acc: "50%",
+    gpt_selection: false,
+    llama_acc: "16.7%",
+    llama_selection: false,
+  },
+  {
+    domain: "Luxury & Specialty Fabrics",
+    scenario: "Thick, luxurious fabric for premium interiors",
+    key_properties: "Thickness (T) Elasticity (e-) Texture (X)",
+    fabric_acc: "61.5%",
+    fabric_selection: false,
+    gpt_acc: "23%",
+    gpt_selection: false,
+    llama_acc: "15.3%",
+    llama_selection: false,
+  },
+];
+
+const getSelectionIcon = (selected) => (selected ? "✅" : "❌");
 </script>
 
 <template>
@@ -277,7 +393,51 @@ const table3Data = [
                     </el-tab-pane>
 
                     <el-tab-pane label="Method D" name="Method D">
-                        Method D
+                        <el-table
+                            :data="table4Data"
+                            :default-sort="{ prop: 'fabric_acc', order: 'descending' }"
+                            border
+                            style="width: 100%; table-layout: fixed;"
+                        >
+                            <!-- 第一列：Domain -->
+                            <el-table-column prop="domain" label="Domain" width="150" />
+
+                            <!-- 第二列：Scenario -->
+                            <el-table-column prop="scenario" label="Scenario" width="300" />
+
+                            <!-- 第三列：Key Sorting Properties -->
+                            <el-table-column prop="key_properties" label="Key Sorting Properties" width="250" />
+
+                            <!-- Fabric-Llama-90B -->
+                            <el-table-column label="Fabric-Llama-90B">
+                                <el-table-column prop="fabric_acc" label="Sorting Acc ↑" width="100" />
+                                <el-table-column label="Selection" width="100">
+                                <template #default="scope">
+                                    {{ getSelectionIcon(scope.row.fabric_selection) }}
+                                </template>
+                                </el-table-column>
+                            </el-table-column>
+
+                            <!-- GPT-4o -->
+                            <el-table-column label="GPT-4o">
+                                <el-table-column prop="gpt_acc" label="Sorting Acc ↑" width="100" />
+                                <el-table-column label="Selection" width="100">
+                                <template #default="scope">
+                                    {{ getSelectionIcon(scope.row.gpt_selection) }}
+                                </template>
+                                </el-table-column>
+                            </el-table-column>
+
+                            <!-- Llama-Vision-90B -->
+                            <el-table-column label="Llama-Vision-90B">
+                                <el-table-column prop="llama_acc" label="Sorting Acc ↑" width="100" />
+                                <el-table-column label="Selection" width="100">
+                                <template #default="scope">
+                                    {{ getSelectionIcon(scope.row.llama_selection) }}
+                                </template>
+                                </el-table-column>
+                            </el-table-column>
+                            </el-table>
                     </el-tab-pane>
                     </el-tabs>
 
