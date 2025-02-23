@@ -7,7 +7,7 @@ import { Document, Files, MagicStick, Picture, DataAnalysis, Film } from '@eleme
 const logo = ''
 
 // 标题
-const title = 'Fabric-Llama: Multimodal Learning for Robotic Fabric Sorting and Selection'
+const title = 'SmartWeave: A Multimodal Language Model Framework for Autonomous Robotic Textile Sorting and Selection'
 
 // 标题颜色
 const title_color = '#000000'
