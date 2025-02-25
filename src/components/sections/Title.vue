@@ -98,7 +98,7 @@ const buttons = [
   {
     disabled: false,
     name: "Video",
-    link: "https://www.bilibili.com/video/BV15XkgYiE73/",
+    link: "https://youtu.be/Kp_8LCMXXmY",
     component: Film,
   }
 ]
