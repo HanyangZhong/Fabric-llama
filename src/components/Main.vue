@@ -23,7 +23,6 @@ export default {
     Abstract,
     Markdown,
     BibTeX,
-    Carousel,
     Video,
     ImageSliderInner,
     ImageSelector,
