@@ -25,7 +25,6 @@ export default {
     BibTeX,
     Carousel,
     Video,
-    ImageSlider,
     ImageSliderInner,
     ImageSelector,
     Echart,
