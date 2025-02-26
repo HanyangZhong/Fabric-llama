@@ -60,7 +60,7 @@ export default {
         }"
         >
         <swiper-slide v-for="path in image_paths">
-          <el-image :src="path" style="width: 50%; height: 300px; object-fit: cover;"/>
+          <el-image :src="path" style="width: 80%; height: 500px; object-fit: cover;"/>
         </swiper-slide>
       </swiper>
     </el-col>
