@@ -11,14 +11,13 @@ export default {
       comparison1Loading: true,
       comparison2Loading: true,
       options: [
-        'bottle',
-        'box',
-        'clip',
-        'cup',
-        'duck',
-        'flim',
-        'glass',
-        'toy'
+        'fala-1-1',
+        'fala-1-2',
+        'fala-1-3',
+        'fala-1-4',
+        'fala-1-5',
+        'fala-1-6',
+        'fala-1-7'
       ],
     }
   },
