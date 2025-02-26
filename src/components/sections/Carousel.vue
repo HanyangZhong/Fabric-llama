@@ -20,16 +20,9 @@ export default {
       ],
       // 选择要轮播的照片
       image_paths: [
-        "./carousel/application_categories.png",
-        "./carousel/combine_pressing.png",
-        "./carousel/combine_RGB_Violin.png",
-        "./carousel/composition_bar.png",
-        "./carousel/First_pic.png",
-        "./carousel/new_second_pic.png",
-        "./carousel/post-hoc-new.png",
-        "./carousel/RGB.png",
-        "./carousel/violin.png",
-        "./carousel/wave_pieChart.png"
+        "./carousel/modify_first_00.png",
+        "./carousel/combine_pressing_00.png",
+        "./carousel/post_new_00.png",
       ],
     }
   }
