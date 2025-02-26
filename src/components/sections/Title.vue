@@ -7,7 +7,7 @@ import { Document, Files, MagicStick, Picture, DataAnalysis, Film } from '@eleme
 const logo = ''
 
 // 标题
-const title = 'SmartWeave: A Multimodal Language Model Framework for Autonomous Robotic Textile Sorting and Selection'
+const title = 'MLLM-FaSS: Multimodal Large Language Model-Based Robotic Framework for Fabric Sorting and Selection'
 
 // 标题颜色
 const title_color = '#000000'
@@ -55,13 +55,11 @@ const addresses = [
   {
     address_flag: "1",
     name: "University of York",
-    icon: "./icon/University_of_York_coat_of_arms.svg.png",
     homepage: "https://www.york.ac.uk/"
   },
   {
     address_flag: "2",
     name: "King’s College London",
-    icon: "./icon/KCL.webp",
     homepage: "https://www.kcl.ac.uk/"
   },
 ]
@@ -71,14 +69,11 @@ const con_and_corresponding_author =
   "#: corresponding author. "
 
 // 最新消息
-const news = "🔥 [2024-12-15] This template project is still under development."
+const news = "🔥 [2025-2-28] Our website is continuously being updated."
 
 // 强调内容
 const emphases = [
-  "🎉 [ABCD 2024] Poster",
-  "🥰 欢迎关注“减论”微信公众号/B站/知乎/小红书",
-  "传递人工智能算法科普教育的减约理解",
-  "提升信息效率及认知维度"
+  "🎉 [arXiv 2025] Paper (Under Review)"
 ]
 
 // 提供引导资料链接
@@ -90,7 +85,7 @@ const buttons = [
     component: Document,
   },
   {
-    disabled: false,
+    disabled: true,
     name: "Code",
     link: "https://github.com/JunyaoHu/academic-project-page-template-vue",
     component: Files,
