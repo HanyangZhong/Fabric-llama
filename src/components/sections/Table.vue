@@ -341,11 +341,11 @@ const getSelectionIcon = (selected) => (selected ? "✅" : "❌");
                         >
                             <el-table-column prop="model" label="Model" width="180"/>
                             <el-table-column prop="modality" label="Modality Data" min-width="200" />
-                            <el-table-column prop="elasticity" label="Elasticity ACC" min-width="120" sortable />
-                            <el-table-column prop="softness" label="Softness ACC" min-width="120" sortable />
-                            <el-table-column prop="thickness" label="Thickness ACC" min-width="120" sortable />
-                            <el-table-column prop="texture" label="Texture ACC" min-width="120" sortable />
-                            <el-table-column prop="overall" label="Overall ACC" min-width="120" sortable />
+                            <el-table-column prop="elasticity" label="Elasticity ACC ↑" min-width="120" sortable />
+                            <el-table-column prop="softness" label="Softness ACC ↑" min-width="120" sortable />
+                            <el-table-column prop="thickness" label="Thickness ACC ↑" min-width="120" sortable />
+                            <el-table-column prop="texture" label="Texture ACC ↑" min-width="120" sortable />
+                            <el-table-column prop="overall" label="Overall ACC ↑" min-width="120" sortable />
                             <el-table-column prop="sk" label="Sk ↓" min-width="100" sortable />
                         </el-table>
                     </el-tab-pane>
@@ -359,11 +359,11 @@ const getSelectionIcon = (selected) => (selected ? "✅" : "❌");
                             style="width: 100%"
                         >
                             <el-table-column prop="model" label="Model" width="180" />
-                            <el-table-column prop="elasticity" label="Elasticity ACC" min-width="120" sortable />
-                            <el-table-column prop="softness" label="Softness ACC" min-width="120" sortable />
-                            <el-table-column prop="thickness" label="Thickness ACC" min-width="120" sortable />
-                            <el-table-column prop="texture" label="Texture ACC" min-width="120" sortable />
-                            <el-table-column prop="overall" label="Overall ACC" min-width="120" sortable />
+                            <el-table-column prop="elasticity" label="Elasticity ACC ↑" min-width="120" sortable />
+                            <el-table-column prop="softness" label="Softness AC ↑C" min-width="120" sortable />
+                            <el-table-column prop="thickness" label="Thickness ACC ↑" min-width="120" sortable />
+                            <el-table-column prop="texture" label="Texture ACC ↑" min-width="120" sortable />
+                            <el-table-column prop="overall" label="Overall ACC ↑" min-width="120" sortable />
                             <el-table-column prop="sk" label="Sk ↓" min-width="100" sortable />
                         </el-table>
                     </el-tab-pane>
