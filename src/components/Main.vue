@@ -30,7 +30,6 @@ export default {
     Collapse,
     Table,
     SeletionForComparison,
-    Comment,
     Latex,
     Model3D,
     GaussianSplats3D
